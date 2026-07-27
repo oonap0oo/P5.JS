@@ -4,7 +4,7 @@ Exploring [P5.JS](https://p5js.org/) JavaScript library
 
 ## Simple Swimmer
 
-Ported from my original QB64 version.
+Ported from my [original QB64 version](https://github.com/oonap0oo/QB64-projects#simple-swimmer).
 
 [View online](https://editor.p5js.org/KMoerman/full/Z5zEQsANe)
 

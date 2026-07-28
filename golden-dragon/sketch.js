@@ -16,7 +16,7 @@ function setup() // this function is called once at start
 	fill('yellow');
 	text('Golden Dragon',300,10)
 	frameRate(30);
-	saveGif('golden_dragon',8)
+	//saveGif('golden_dragon',8)
 }
 
 function draw() // this function is called again every frame

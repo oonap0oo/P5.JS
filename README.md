@@ -1,6 +1,8 @@
 # P5.JS
 
-Exploring [P5.JS](https://p5js.org/) JavaScript library 
+Exploring [P5.JS](https://p5js.org/) JavaScript library.
+
+View the pieces of code on the [P5.JS website 'My Sketches'](https://editor.p5js.org/KMoerman/sketches)
 
 ## Simple Swimmer
 
@@ -16,7 +18,24 @@ The code on Github:
 
 Animated GIF file created using the saveGif() function:
 
-![simpleswimmer.gif](simple swimmer/simpleswimmer.gif)
+![simpleswimmer.gif](simple-swimmer/simpleswimmer.gif)
 
+## Golden Dragon
+
+One of the classic Iterated Function Systems.
+
+Using information from [https://larryriddle.agnesscott.org/ifs/heighway/goldenDragon.htm](https://larryriddle.agnesscott.org/ifs/heighway/goldenDragon.htm)
+
+[View online](https://editor.p5js.org/KMoerman/full/cFivNPzxW)
+
+The code on Github:
+
+* Javascript code file [sketch.js](golden-dragon/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](golden-dragon/index.html)
+
+Animated GIF file created using the saveGif() function:
+
+![golden-dragon/golden_dragon.gif](golden-dragon/golden_dragon.gif)
 
 

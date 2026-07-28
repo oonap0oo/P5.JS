@@ -10,13 +10,13 @@ Ported from my [original QB64 version](https://github.com/oonap0oo/QB64-projects
 
 The code on Github:
 
-* Javascript code file [sketch.js](sketch.js)
+* Javascript code file [sketch.js](simple swimmer/sketch.js)
 
-* HTML file to run javascript in browser: [index.html](index.html)
+* HTML file to run javascript in browser: [index.html](simple swimmer/index.html)
 
 Animated GIF file created using the saveGif() function:
 
-![simpleswimmer.gif](simpleswimmer.gif)
+![simpleswimmer.gif](simple swimmer/simpleswimmer.gif)
 
 
 

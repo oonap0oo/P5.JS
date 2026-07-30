@@ -38,4 +38,18 @@ Animated GIF file created using the saveGif() function:
 
 ![golden-dragon/golden_dragon.gif](golden-dragon/golden_dragon.gif)
 
+## Floaty
 
+A 'creature" with long tentacles that seems to float in circles. All made from math functions
+
+[View online](https://editor.p5js.org/KMoerman/full/Y8FpStIRm)
+
+The code on Github:
+
+* Javascript code file [sketch.js](floaty/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](simple-swimmer/index.html)
+
+Animated GIF file created using the saveGif() function:
+
+![floaty/floaty.gif](floaty/floaty.gif)

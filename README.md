@@ -48,8 +48,25 @@ The code on Github:
 
 * Javascript code file [sketch.js](floaty/sketch.js)
 
-* HTML file to run javascript in browser: [index.html](simple-swimmer/index.html)
+* HTML file to run javascript in browser: [index.html](floaty/index.html)
 
 Animated GIF file created using the saveGif() function:
 
 ![floaty/floaty.gif](floaty/floaty.gif)
+
+## Sin tiles
+
+A animated image based on the iteration after choosing a random starting point x,y:
+
+    x = x + sin(y)
+    y = y + sin(x)
+
+[View online](https://editor.p5js.org/KMoerman/full/96817Nnir)
+
+The code on Github:
+
+* Javascript code file [sketch.js](sin_files/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](sin_files/index.html)
+  
+![sin_tiles/sin_tiles_small.gif](sin_tiles/sin_tiles_small.gif)

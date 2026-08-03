@@ -70,3 +70,26 @@ The code on Github:
 * HTML file to run javascript in browser: [index.html](sin_files/index.html)
   
 ![sin_tiles/sin_tiles_small.gif](sin_tiles/sin_tiles_small.gif)
+
+## Bubble Universe
+
+The algoritm is found on many places on the web.
+
+The example used as reference, in Sinclair Basic on a PC by BigEd: 
+[https://stardot.org.uk/forums/viewtopic.php?t=25833](https://stardot.org.uk/forums/viewtopic.php?t=25833)
+
+[View online](https://editor.p5js.org/KMoerman/full/211sgJf1G)
+
+[View on Youtube](https://youtu.be/H8qWZb4fJ7Q?si=Xz4OR4ypXZiozKgz)
+
+The code on Github:
+
+* Javascript code file [sketch.js](bubble-universe/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](bubble-universe/index.html)
+
+A still from the animation:
+
+![bubble-universe/bubble_universe.png](bubble-universe/bubble_universe.png)
+
+  

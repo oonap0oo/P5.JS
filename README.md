@@ -98,7 +98,7 @@ Exploring Vectors and UI sliders in P5.JS
 
 A toy which bounces points inside a circle, influenced by gravity and friction
 
-[View onlice](https://editor.p5js.org/KMoerman/full/EPs-ahIuN)
+[View online](https://editor.p5js.org/KMoerman/full/EPs-ahIuN)
 
 The code on Github:
 

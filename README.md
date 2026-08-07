@@ -92,4 +92,21 @@ A still from the animation:
 
 ![bubble-universe/bubble_universe.png](bubble-universe/bubble_universe.png)
 
-  
+## Bouncing Points
+
+Exploring Vectors and UI sliders in P5.JS
+
+A toy which bounces points inside a circle, influenced by gravity and friction
+
+[View onlice](https://editor.p5js.org/KMoerman/full/EPs-ahIuN)
+
+The code on Github:
+
+* Javascript code file [sketch.js](vectors/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](vectors/index.html)
+
+A still from the animation:
+
+![vectors/bouncing_points.png](vectors/bouncing_points.png)
+

@@ -106,6 +106,8 @@ The code on Github:
 
 * HTML file to run javascript in browser: [index.html](vectors/index.html)
 
+[View on Youtube](https://youtu.be/gqJfqqSY-80?si=l5E5JDLH1iAwULUt)
+
 A still from the animation:
 
 ![vectors/bouncing_points.png](vectors/bouncing_points.png)

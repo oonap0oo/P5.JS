@@ -110,3 +110,24 @@ A still from the animation:
 
 ![vectors/bouncing_points.png](vectors/bouncing_points.png)
 
+## Interference
+
+Interference, a visual effect based on the general idea of two point wave sources with an interference pattern.
+
+The point sources travel in circular paths changing their distance from each other continuously.
+
+This idea was [first implemented using QB64](https://github.com/oonap0oo/QB64-projects#interference)
+
+[View online](https://editor.p5js.org/KMoerman/sketches/DvfOHq_oX)
+
+The code on Github:
+
+* Javascript code file [sketch.js](interference/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](interference/index.html)
+
+A still from the animation:
+
+![interference/interference.png](interference/interference.png)
+
+

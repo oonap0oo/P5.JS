@@ -126,6 +126,8 @@ The code on Github:
 
 * HTML file to run javascript in browser: [index.html](interference/index.html)
 
+[View on Youtube](https://youtu.be/uzFyvvNck2o)
+
 A still from the animation:
 
 ![interference/interference.png](interference/interference.png)

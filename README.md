@@ -148,5 +148,9 @@ The code on Github:
 
 Some examples of figures:
 
+![vector-sum/sumvectors_contact.png](vector-sum/sumvectors_contact.png)
+
+The application in a browser:
+
 ![vector-sum/vector_sum_screenshot.png](vector-sum/vector_sum_screenshot.png)
 

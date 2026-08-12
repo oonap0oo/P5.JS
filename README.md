@@ -134,4 +134,19 @@ A still from the animation:
 
 ![interference/interference.png](interference/interference.png)
 
+## Sum of vectors
+
+Making figures by rotating a series of vectors and plotting the sum.
+
+[View online](https://editor.p5js.org/KMoerman/sketches/eUn-LqfU4)
+
+The code on Github:
+
+* Javascript code file [sketch.js](vector-sum/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](vector-sum/index.html)
+
+Some examples of figures:
+
+![vector-sum/vector_sum_screenshot.png](vector-sum/vector_sum_screenshot.png)
 

@@ -154,3 +154,38 @@ The application in a browser:
 
 ![vector-sum/vector_sum_screenshot.png](vector-sum/vector_sum_screenshot.png)
 
+## Non Periodic
+
+It is based on the function
+
+    sin(PI.x) + sin(x)
+
+which is not periodic because the ratio of their periods is not a rational number.
+
+This code is made to fit in a post on X.com which is limited to 280 characters.
+
+    a=0
+    dt=.04
+    draw=_=>{ 
+        a++||createCanvas(W=500,W)
+        background(0,20);stroke(255)
+        for(t=0,tt=.002*a+1;t<75;t+=dt,tt+=dt){
+        x=250+105*(sin(PI*tt)+sin(2*tt))
+        y=250+105*(sin(PI*t)+sin(2*t))
+        point(x,y);
+        }
+    }
+
+[View online](https://editor.p5js.org/KMoerman/sketches/k_VU0-F-v)
+
+The code on Github:
+
+* Javascript code file [sketch.js](non-periodic/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](non-periodic/index.html)
+
+A GIF made from screen recording the animation:
+
+![non-periodic/nonperiodic.gif](non-periodic/nonperiodic.gif)
+
+

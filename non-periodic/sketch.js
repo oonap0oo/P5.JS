@@ -1,0 +1,11 @@
+a=0
+dt=.04
+draw=_=>{ 
+  a++||createCanvas(W=500,W)
+  background(0,20);stroke(255)
+  for(t=0,tt=.002*a+1;t<75;t+=dt,tt+=dt){
+	x=250+105*(sin(PI*tt)+sin(2*tt))
+  y=250+105*(sin(PI*t)+sin(2*t))
+  point(x,y);
+  }
+}

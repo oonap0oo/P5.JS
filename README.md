@@ -188,4 +188,29 @@ A GIF made from screen recording the animation:
 
 ![non-periodic/nonperiodic.gif](non-periodic/nonperiodic.gif)
 
+## Non periodic with feedback
 
+Adding some feedback by adding previous value x to the function argument
+
+    a=0;x=0//non-periodic-with-feedback #p5js
+    f=(x)=>sin(PI*x)+sin(4.5*x);m=(x)=>175+85*x
+    draw=_=>{ 
+      a++||(createCanvas(W=350,W),stroke(W))
+      background(0,35)
+      beginShape(POINTS)
+      for(t=2000;t--;){
+      y=f(p=t/30+x);x=f(a/500+p)
+      vertex(m(x),m(y))}
+      endShape()}
+
+[View online](https://editor.p5js.org/KMoerman/sketches/IOlNecOtU)
+
+The code on Github:
+
+* Javascript code file [sketch.js](non-periodic/sketch6.js)
+
+* HTML file to run javascript in browser: [index.html](non-periodic/index6.html)
+
+A GIF made from screen recording the animation:
+
+![non-periodic/nonperiodicfeedback.gif](non-periodic/nonperiodicfeedback.gif)

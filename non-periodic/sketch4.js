@@ -1,0 +1,11 @@
+a=0
+dt=.03
+f=(x)=>150+70*(sin(PI*x)+sin(4.5*x))
+draw=_=>{ 
+  a++||(createCanvas(W=300,W),stroke(255))
+  background(0,30)
+  beginShape(POINTS)
+  for(t=0,tt=.0015*a+1;t<75;t+=dt,tt+=dt){
+  vertex(f(tt),f(t))}
+  endShape()
+}

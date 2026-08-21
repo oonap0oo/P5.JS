@@ -165,28 +165,28 @@ which is not periodic because the ratio of their periods is not a rational numbe
 This code is made to fit in a post on X.com which is limited to 280 characters.
 
     a=0
-    dt=.04
+    dt=.03
+    f=(x)=>150+70*(sin(PI*x)+sin(4.5*x))
     draw=_=>{ 
-        a++||createCanvas(W=500,W)
-        background(0,20);stroke(255)
-        for(t=0,tt=.002*a+1;t<75;t+=dt,tt+=dt){
-        x=250+105*(sin(PI*tt)+sin(2*tt))
-        y=250+105*(sin(PI*t)+sin(2*t))
-        point(x,y);
-        }
+      a++||(createCanvas(W=300,W),stroke(255))
+      background(0,30)
+      beginShape(POINTS)
+      for(t=0,tt=.0015*a+1;t<75;t+=dt,tt+=dt){
+      vertex(f(tt),f(t))}
+      endShape()
     }
 
-[View online](https://editor.p5js.org/KMoerman/sketches/k_VU0-F-v)
+[View online](https://editor.p5js.org/KMoerman/sketches/h_PMQP6k1)
 
 The code on Github:
 
-* Javascript code file [sketch.js](non-periodic/sketch.js)
+* Javascript code file [sketch.js](non-periodic/sketch4.js)
 
-* HTML file to run javascript in browser: [index.html](non-periodic/index.html)
+* HTML file to run javascript in browser: [index.html](non-periodic/index4.html)
 
 A GIF made from screen recording the animation:
 
-![non-periodic/nonperiodic.gif](non-periodic/nonperiodic.gif)
+![non-periodic/nonperiodic.gif](non-periodic/nonperiodic2.gif)
 
 ## Non periodic with feedback
 

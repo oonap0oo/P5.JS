@@ -214,3 +214,26 @@ The code on Github:
 A GIF made from screen recording the animation:
 
 ![non-periodic/nonperiodicfeedback.gif](non-periodic/nonperiodicfeedback.gif)
+
+## Xor-sphere
+
+Trying the 3D functionality in P5.JS. 
+
+    t=0;b=255;W=382;s=8//xor-sphere #p5js
+    d=_=>{T.noStroke();for(x=0;x<W;x+=s)for(y=0;y<W;y+=s){T.fill(r=((x^y)+t)&b,2*r%b,4*r%b);
+    T.rect(x,y,s)}}
+    draw=_=>{t++||(createCanvas(W,W,WEBGL),noStroke(),T=createGraphics(W,W))
+    d();background(0);rotateY(t/200);texture(T);sphere(160)}
+
+[View online](https://editor.p5js.org/KMoerman/sketches/NE2dpXwL2)
+
+The code on Github:
+
+* Javascript code file [sketch.js](xor-sphere/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](xor-sphere/index.html)
+
+A GIF made from screen recording the animation:
+
+![xor-sphere/xor-sphere.gif](xor-sphere/xor-sphere.gif)
+

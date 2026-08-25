@@ -237,3 +237,30 @@ A GIF made from screen recording the animation:
 
 ![xor-sphere/xor-sphere.gif](xor-sphere/xor-sphere.gif)
 
+## Dropping squares
+
+Using a simple bitwise XOR function to determine a y coordinate for each x coordinate. t is a parameter which increases with each frame.
+
+    y = x XOR t
+
+Or in javascript notation:
+   
+    y = x^t
+
+The code:
+
+    t=0//Dropping squares #p5js
+    draw=_=>{t++||createCanvas(W=784,H=512)
+    for(x=0;x<W;x+=16){y=x^t;fill(c=x&255,(x&127)*2,255-c);rect(x%W,y%H,16)}}
+
+[View online](https://editor.p5js.org/KMoerman/sketches/9pCG3DtSG)
+
+The code on Github:
+
+* Javascript code file [sketch.js](munching-squares/sketch2.js)
+
+* HTML file to run javascript in browser: [index.html](munching-squares/index.html)
+
+A GIF made from screen recording the animation; the real output is smoother:
+
+![munching-squares/dropping-squares.gif](munching-squares/dropping-squares.gif)

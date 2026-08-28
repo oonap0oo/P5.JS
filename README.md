@@ -259,8 +259,32 @@ The code on Github:
 
 * Javascript code file [sketch.js](munching-squares/sketch2.js)
 
-* HTML file to run javascript in browser: [index.html](munching-squares/index.html)
+* HTML file to run javascript in browser: [index.html](munching-squares/index2.html)
 
 A GIF made from screen recording the animation; the real output is smoother:
 
 ![munching-squares/dropping-squares.gif](munching-squares/dropping-squares.gif)
+
+## Falling squares with text
+
+Adding some text to the animation
+
+The code:
+
+    t=0//Falling squares w text #p5js
+    s='falling•squares•'
+    draw=_=>{t++||createCanvas(W=784,H=512)+textAlign(CENTER,CENTER)+textSize(14)
+    for(x=0;x<W;x+=16){y=x^t;fill(r=x&255,(x&127)*2,255-r);rect(x,v=y%H,16)
+    fill(0);text(s[(x/16+floor(y/16))%16],x+8,v+8)}}
+
+[View online](https://editor.p5js.org/KMoerman/sketches/VvHqk2a53)
+
+The code on Github:
+
+* Javascript code file [sketch.js](munching-squares/sketch3.js)
+
+* HTML file to run javascript in browser: [index.html](munching-squares/index3.html)
+
+A still from the animation:
+
+![munching-squares/falling-squares-text.png](munching-squares/falling-squares-text.png)

@@ -288,3 +288,24 @@ The code on Github:
 A still from the animation:
 
 ![munching-squares/falling-squares-text.png](munching-squares/falling-squares-text.png)
+
+## P. De Jong Attractor
+
+A strange attractor defined by a system of iterative functions, see reference page [Peter de Jong Attractors](https://paulbourke.net/fractals/peterdejong/)
+
+    xn+1 = sin(a yn) - cos(b xn)
+    yn+1 = sin(c xn) - cos(d yn)
+
+a,b,c,d are the four parameters, tend to be sensitive to changes.
+
+[View online](https://editor.p5js.org/KMoerman/sketches/AATnPmmJ6)
+
+The code on Github:
+
+* Javascript code file [sketch.js](p-de-jong-attractor/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](p-de-jong-attractor/index.html)
+
+The created image:
+
+![p-de-jong-attractor/p-de-jong.png](p-de-jong-attractor/p-de-jong.png)

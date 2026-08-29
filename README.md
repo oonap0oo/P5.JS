@@ -291,7 +291,7 @@ A still from the animation:
 
 ## P. De Jong Attractor
 
-A strange attractor defined by a system of iterative functions, see reference page [Peter de Jong Attractors](https://paulbourke.net/fractals/peterdejong/)
+A strange attractor defined by a system of equations which calculate new x,y values from the previous set. See reference page [Peter de Jong Attractors](https://paulbourke.net/fractals/peterdejong/)
 
     xn+1 = sin(a yn) - cos(b xn)
     yn+1 = sin(c xn) - cos(d yn)

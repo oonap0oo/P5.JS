@@ -309,3 +309,51 @@ The code on Github:
 The created image:
 
 ![p-de-jong-attractor/p-de-jong.png](p-de-jong-attractor/p-de-jong.png)
+
+## Sierpinski's dream
+
+An animation which draws Sierpinki's triangles using only a OR function
+
+    //Sierpiński's dream #p5js
+    t=0;d=255
+    draw=_=>{t++||createCanvas(W=2*(w=256),W)+background(0)
+    for(k=W;k--;){y=k|t%W;x=(t-k)%W;stroke((y>w)*d,t&d,k&d);point(x,W-y);point(x,y)}}
+
+[View online](https://editor.p5js.org/KMoerman/sketches/4ATj0wy0U)
+
+The code on Github:
+
+* Javascript code file [sketch.js](sierpinskis-dream/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](sierpinskis-dream/index.html)
+
+A still from the animation:
+
+![sierpinskis-dream/sierpinskis-dream.png](sierpinskis-dream/sierpinskis-dream.png)
+
+## 'andxor' vibes
+
+For this animation the code uses nested loops to visit each x,y position of one quarter of the image. The color of this position is determined by the basic form:
+
+    x AND y XOR t
+
+where t is a ever increasing time value
+The other 3 quarters of the image are mirrored copies of the first.
+
+    t=0;d=4,w=256//andxor vibes #p5js
+    r=(x,y)=>rect(x,y,d)
+    draw=_=>{t++||createCanvas(W=2*w-d,W)+noStroke()
+    for(y=0;y<w;y+=d)for(x=0;x<w;x+=d){q=(x<<1)&(y<<1)^(t>>2)
+    fill(q%257,(q%129)*2,(q%65)*4);r(x,y);r(x,v=W-y);r(u=W-x,y);r(u,v)}}
+
+[View online](https://editor.p5js.org/KMoerman/sketches/Ydk3C-kvu)
+
+The code on Github:
+
+* Javascript code file [sketch.js](andxor-vibes/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](andxor-vibes/index.html)
+
+A still from the animation:
+
+![andxor-vibes/andxor-vibes.png](andxor-vibes/andxor-vibes.png)

@@ -382,9 +382,9 @@ The other 3 quarters are coppied and flipped accordingly. It gives munching squa
 
 The code on Github:
 
-* Javascript code file [sketch.js](andxor-vibes/sketch2.js)
+* Javascript code file [sketch2.js](andxor-vibes/sketch2.js)
 
-* HTML file to run javascript in browser: [index.html](andxor-vibes/index2.html)
+* HTML file to run javascript in browser: [index2.html](andxor-vibes/index2.html)
 
 A still from the animation:
 

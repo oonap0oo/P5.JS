@@ -4,6 +4,31 @@ Exploring [P5.JS](https://p5js.org/) JavaScript library.
 
 View the pieces of code on the [P5.JS website 'My Sketches'](https://editor.p5js.org/KMoerman/sketches)
 
+The javascript code of a sketch can also be executed locally in a browser by combining it with an HTML file such as this example:
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.min.js"></script>
+        <!--<script src="../lib/p5.js"></script>-->
+	    <script src="sketch.js"></script>
+	    <title>Title</title>
+      </head>
+      <body></body>
+    </html>
+
+This HTML file, saved as index.html for example, opened in a browser will execute javascript code contained in file <b>sketch.js</b> because of the line
+
+    <script src="sketch.js"></script>
+
+The javascript code can be enhanced with the functions from the library P5.JS because of the line
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.3.2/lib/p5.min.js"></script>
+
+Note the version 2.3.2 of the library is used in this example, this can be modified. This library itself is also javascript code.
+
+
 ## Simple Swimmer
 
 Ported from my [original QB64 version](https://github.com/oonap0oo/QB64-projects#simple-swimmer).

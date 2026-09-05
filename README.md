@@ -348,6 +348,8 @@ The other 3 quarters of the image are mirrored copies of the first.
 
 [View online](https://editor.p5js.org/KMoerman/sketches/Ydk3C-kvu)
 
+[View animation on Youtube](https://youtube.com/shorts/GyZFgGQoy8w?feature=share)
+
 The code on Github:
 
 * Javascript code file [sketch.js](andxor-vibes/sketch.js)
@@ -357,3 +359,34 @@ The code on Github:
 A still from the animation:
 
 ![andxor-vibes/andxor-vibes.png](andxor-vibes/andxor-vibes.png)
+
+## Shifting madness
+
+For this version the code also uses nested loops to visit each x,y position of one quarter of the image, but the colors are determined by:
+
+    (x-t) AND (y-t)
+
+The other 3 quarters are coppied and flipped accordingly. It gives munching squares like patterns which move away from the center.
+
+    t=0;d=4,w=256//shifting madness #p5js
+    f=(k,l)=>{scale(k,l);image(c,-w,-w)}
+    draw=_=>{t++||createCanvas(W=2*w,W)+noStroke()
+    for(y=0;y<w;y+=d)for(x=0;x<w;x+=d){q=(x+t)&(y+t)
+    fill(q&255,(q<<1)&255,(q<<2)&255);rect(x,y,d)}
+    c=get(0,0,w,w);translate(w,w);f(1,-1);f(-1,1);f(1,-1)}
+
+
+[View online](https://editor.p5js.org/KMoerman/sketches/w-MahJmnU)
+
+[View animation on Youtube](https://youtube.com/shorts/M0LM4QfItpQ?feature=share)
+
+The code on Github:
+
+* Javascript code file [sketch.js](andxor-vibes/sketch2.js)
+
+* HTML file to run javascript in browser: [index.html](andxor-vibes/index2.html)
+
+A still from the animation:
+
+![andxor-vibes/shifting-madness.png](andxor-vibes/shifting-madness.png)
+

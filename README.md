@@ -502,6 +502,24 @@ A still from the animation:
 
 ![hint-of-mandelbrod/hint-julia.png](hint-of-mandelbrod/hint-julia.png)
 
+## Busy Mosaic
 
+Coloured squared are continuously added to the image, together they reveal an pattern.
+
+    s=6;t=0//BusyMozaic #p5js
+    draw=_=>{t++||createCanvas(2*(W=225),2*(H=150))+background(0)
+    for(x=0;x<2*W;x+=s){y=(x^t)%(2*H);y=s*~~(y/s)
+    u=1.7*(x-W);v=1.7*(y-H)+150;d=~~abs(u**3/4E4-u+3*v-v**2/1E2)
+    p=(d/s)%(s&t);fill(d%256,(d%128)*2,(d%32)*8);rect(x-p,y-p,2*p)}}
+
+The code on Github:
+
+* Javascript code file [sketch2.js](busy-mosaic/sketch.js)
+
+* HTML file to run javascript in browser: [index2.html](busy-mosaic/index.html)
+
+A still from the animation:
+
+![busy-mosaic/busy-mozaic.png](busy-mosaic/busy-mozaic.png)
 
 

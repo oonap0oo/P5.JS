@@ -1,4 +1,4 @@
-# P5.JS
+# Javascript and P5.JS library
 
 Exploring [P5.JS](https://p5js.org/) JavaScript library.
 

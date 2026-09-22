@@ -504,7 +504,7 @@ A still from the animation:
 
 ## Busy Mosaic
 
-Coloured squared are continuously added to the image, together they reveal an pattern.
+Coloured squares are continuously added to the image, together they reveal an pattern.
 
     s=6;t=0//BusyMozaic #p5js
     draw=_=>{t++||createCanvas(2*(W=225),2*(H=150))+background(0)
@@ -522,4 +522,25 @@ A still from the animation:
 
 ![busy-mosaic/busy-mozaic.png](busy-mosaic/busy-mozaic.png)
 
+## Rule 110
 
+This piece of code displays a [1D or elementary cellular automation](https://en.wikipedia.org/wiki/Elementary_cellular_automaton) and scrolls the content upwards to show successive generations. The rule is defined in a string variable. The status of the cells is kept in a array. The copy() function from the p5.js library is used for scolling.
+
+[Rule 110](https://en.wikipedia.org/wiki/Rule_110) is used for the automation.
+
+    N=63;s=6;g=Array(N).fill(t=0);g[0]=1;r="01110110"//Rule110 #p5js
+    draw=_=>{t++||createCanvas(W=s*N,W)+noStroke()
+    if(!(t%s)){h=[...g]
+    for(k=0;k<N;){h[k]=r[(g[k?k-1:N-1]<<2)|(g[k]<<1)|g[k<N-1?k+1:0]]
+    fill(h[k]*W,g[k]*W,0);rect(k++*s,W-1,s)};g=h}
+    copy(0,1,W,H=W-1,0,0,W,H)}
+
+The code on Github:
+
+* Javascript code file [sketch2.js](rule-110/sketch.js)
+
+* HTML file to run javascript in browser: [index2.html](rule-110/index.html)
+
+A still from the animation:
+
+![rule-110/rule-110.png](rule-110/rule-110.png)

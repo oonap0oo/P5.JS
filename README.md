@@ -417,8 +417,20 @@ A still from the animation:
 
 ## Minsky Crayons
 
-This piece of code uses a variation of the Minky circle algorithm to draw random ellipses. These look a bit like a crayon was used.
+This piece of code uses a variation of the Minky circle algorithm to draw random ellipses. These look a bit like a crayon was used. The ellipses are drawn by plotting x,y points while modifying x,y by:
 
+    x=x - y>>e
+	y=x + x>>d
+
+where >> is bitwise right shift, e and d are parameters varied randomly, the initial values for x and y are changed according to 
+
+   x=y=B&t
+
+or 
+
+   x=y=(B^t)&B
+
+depending on the value of flag f which toggles in regular intervals
 
     t=0;B=255;f=0//Minsky Crayons #p5js
     draw=_=>{t||(createCanvas(W=2*B,W),n=noise)
@@ -435,3 +447,33 @@ The code on Github:
 A still from the animation:
 
 ![minsky-crayons/minsky-crayons.png](minsky-crayons/minsky-crayons.png)
+
+## Hint of Mandelbrot
+
+The outline of the classic Mandelbrot fractal appears as coloured dots move around. The size and color of the dots is governed by 
+
+    l*sin(x*y+t)
+
+where l is controlled by the Mandelbrot equation and gives the outline
+x,y are coordinates in the image and t increases evrery frame
+
+    t=0;s=10;b=255
+    draw=_=>{t++||createCanvas(W=2*b,W)+noStroke();background(0)
+    for(x=0;x<W;x+=s){r=x/W*3-2
+    for(y=0;y<W;y+=s){i=y/W*3-1.5
+    u=v=0;for(l=s;l--;){[u,v]=[u*u-v*v+r,2*u*v+i];if(mag(u,v)>2)break}
+    q=l*sin((x*y+t)/s/2)
+    fill((q*30)&b,(q*57)&b,(q*76)&b);circle(x,y,2+q)}}}
+
+The code on Github:
+
+* Javascript code file [sketch2.js](hint-of-mandelbrod/sketch.js)
+
+* HTML file to run javascript in browser: [index2.html](hint-of-mandelbrod/index.html)
+
+A still from the animation:
+
+![minsky-crayons/minsky-crayons.png](hint-of-mandelbrod/hint-mandelbrod.png)
+
+
+

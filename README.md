@@ -476,4 +476,32 @@ A still from the animation:
 ![minsky-crayons/minsky-crayons.png](hint-of-mandelbrod/hint-mandelbrod.png)
 
 
+## Hint of Julia
+
+The outline of the classic Julia fractal appears as squares change in size and color. The size and color of the dots is governed by 
+
+    l*sin(m+t/30)
+
+where l is controlled by the Julia equation and gives the outline
+m is maximum magnitude which the fractal variable reached before the loop was terminated. 
+t increases every frame
+
+    t=0;s=8;b=255;f=x=>x/W*2.6-1.3//#p5js
+    draw=_=>{t++||createCanvas(W=2*b,W)+noStroke();background(0)
+    for(x=0;x<W;x+=s)for(y=0;y<W;y+=s){u=f(x);v=f(y)
+    for(l=0;(l<s-2)&((m=mag(u,v))<2);l++)[u,v]=[u*u-v*v+.4,2*u*v+.35]
+    q=sin(m+t/30);fill((m*b)&b,(q*b)&b,(m*q)&b);rect(x,y,l*q)}}
+
+The code on Github:
+
+* Javascript code file [sketch2.js](hint-of-mandelbrod/sketch2.js)
+
+* HTML file to run javascript in browser: [index2.html](hint-of-mandelbrod/index2.html)
+
+A still from the animation:
+
+![hint-of-mandelbrod/hint-julia.png](hint-of-mandelbrod/hint-julia.png)
+
+
+
 

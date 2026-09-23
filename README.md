@@ -544,3 +544,31 @@ The code on Github:
 A still from the animation:
 
 ![rule-110/rule-110.png](rule-110/rule-110.png)
+
+## Pixels
+
+This piece of code used the array pixels[] provided by the p5.js library. After a call to loadPixels() this array contains the RGBA values of each pixel in the image, after modifying the values a call to updatePixels() displays the changes.
+This example uses a sort of moiré effect to generate the image.
+
+    // pixels
+    t=0
+    draw=_=>{
+    t||(createCanvas(W=350,W),pixelDensity(1),t=160,v=W/2)
+    loadPixels()
+    for(x=0;x<W;x++)
+    for(y=0;y<W;y++){
+    r=mag(x-v,y-v);p=sin(t*r)
+    for(c=0;c<4;c++){
+    pixels[4*(W*y+x)+c]=255*((c==3)||sin(.006*r+c-t)*p)}}
+    t+=.001;updatePixels()
+    }
+
+The code on Github:
+
+* Javascript code file [sketch2.js](pixels/sketch.js)
+
+* HTML file to run javascript in browser: [index2.html](pixels/index.html)
+
+A still from the animation:
+
+![pixels/pixels.png](pixels/pixels.png)

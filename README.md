@@ -440,9 +440,9 @@ depending on the value of flag f which toggles in regular intervals
 
 The code on Github:
 
-* Javascript code file [sketch2.js](minsky-crayons/sketch.js)
+* Javascript code file [sketch.js](minsky-crayons/sketch.js)
 
-* HTML file to run javascript in browser: [index2.html](minsky-crayons/index.html)
+* HTML file to run javascript in browser: [index.html](minsky-crayons/index.html)
 
 A still from the animation:
 
@@ -467,9 +467,9 @@ x,y are coordinates in the image and t increases evrery frame
 
 The code on Github:
 
-* Javascript code file [sketch2.js](hint-of-mandelbrod/sketch.js)
+* Javascript code file [sketch.js](hint-of-mandelbrod/sketch.js)
 
-* HTML file to run javascript in browser: [index2.html](hint-of-mandelbrod/index.html)
+* HTML file to run javascript in browser: [index.html](hint-of-mandelbrod/index.html)
 
 A still from the animation:
 
@@ -514,9 +514,9 @@ Coloured squares are continuously added to the image, together they reveal an pa
 
 The code on Github:
 
-* Javascript code file [sketch2.js](busy-mosaic/sketch.js)
+* Javascript code file [sketch.js](busy-mosaic/sketch.js)
 
-* HTML file to run javascript in browser: [index2.html](busy-mosaic/index.html)
+* HTML file to run javascript in browser: [index.html](busy-mosaic/index.html)
 
 A still from the animation:
 
@@ -537,9 +537,9 @@ This piece of code displays a [1D or elementary cellular automation](https://en.
 
 The code on Github:
 
-* Javascript code file [sketch2.js](rule-110/sketch.js)
+* Javascript code file [sketch.js](rule-110/sketch.js)
 
-* HTML file to run javascript in browser: [index2.html](rule-110/index.html)
+* HTML file to run javascript in browser: [index.html](rule-110/index.html)
 
 A still from the animation:
 
@@ -565,9 +565,9 @@ This example uses a sort of moiré effect to generate the image.
 
 The code on Github:
 
-* Javascript code file [sketch2.js](pixels/sketch.js)
+* Javascript code file [sketch.js](pixels/sketch.js)
 
-* HTML file to run javascript in browser: [index2.html](pixels/index.html)
+* HTML file to run javascript in browser: [index.html](pixels/index.html)
 
 A still from the animation:
 
@@ -585,9 +585,9 @@ The text p5⁎js is displayed consisting of dots that seem to move around and ch
 
 The code on Github:
 
-* Javascript code file [sketch2.js](p5js/sketch.js)
+* Javascript code file [sketch.js](p5js/sketch.js)
 
-* HTML file to run javascript in browser: [index2.html](p5js/index.html)
+* HTML file to run javascript in browser: [index.html](p5js/index.html)
 
 A still from the animation:
 
@@ -612,9 +612,9 @@ It plots small circles at x,y and uses part of z (cos(u) for the color. The inte
 
 The code on Github:
 
-* Javascript code file [sketch2.js](swirl/sketch.js)
+* Javascript code file [sketch.js](swirl/sketch.js)
 
-* HTML file to run javascript in browser: [index2.html](swirl/index.html)
+* HTML file to run javascript in browser: [index.html](swirl/index.html)
 
 A still from the animation:
 

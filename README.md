@@ -572,3 +572,52 @@ The code on Github:
 A still from the animation:
 
 ![pixels/pixels.png](pixels/pixels.png)
+
+## p5⁎js
+
+The text p5⁎js is displayed consisting of dots that seem to move around and change color. The code first prints the text using a color which differs only one digit from the background. This is then used as a mask to draw the colored dots at the right places. For speed, the array pixels[] is used to sample the image. This array is automatically filled with the RGBA values of each image pixel after a call to loadPixels().
+
+    t=0;b=255// #p5js
+    draw=_=>{t++||createCanvas(W=768,H=304)+textSize(H)+pixelDensity(1)+noStroke()
+    background(fill(1));text("p5⁎js",20,227);loadPixels()
+    for(x=W;x-=8;)for(y=H;y-=8;){l=pixels[4*(W*y+x)]>0?8:3
+    q=l*sin(x*y+t/10);fill(c=q*67&b,q*43&b,q*56&b);circle(x,y,q)}}
+
+The code on Github:
+
+* Javascript code file [sketch2.js](p5js/sketch.js)
+
+* HTML file to run javascript in browser: [index2.html](p5js/index.html)
+
+A still from the animation:
+
+![p5js/p5ja.png](p5js/p5ja.png)
+
+## Swirl
+
+This code generates a visual effect based on the equations of a sphere using spherical coordinates.
+
+    x = R sin(u) cos(v)
+    y = R sin(u) sin(v)
+    z = R cos(u)
+
+It plots small circles at x,y and uses part of z (cos(u) for the color. The intervals which u and v iterate over shift each frame using variable t. The effect is completed due to the varying step size for u and v which changes continuously, as the step size for u increases, the step size for v decreases.
+
+    f=0;r=190,b=255// #p5js
+    draw=_=>{f++||createCanvas(W=2*(w=200),W)+background(noStroke())
+    f&3?0:background(0,8);dt=.8*sin(t=f/200)
+    for(u=t;q=sin(u),p=cos(u),u<t+TAU;u+=1-dt)
+    for(v=t;j=sin(v),k=cos(v),v<t+TAU;v+=1+dt)
+    {fill(c=b*j,b*p,b-c);circle(w+r*q*k,w+r*q*j,5*q)}}
+
+The code on Github:
+
+* Javascript code file [sketch2.js](swirl/sketch.js)
+
+* HTML file to run javascript in browser: [index2.html](swirl/index.html)
+
+A still from the animation:
+
+![swirl/swirl.png](swirl/swirl.png)
+
+

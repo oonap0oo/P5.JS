@@ -583,6 +583,8 @@ The text p5⁎js is displayed consisting of dots that seem to move around and ch
     for(x=W;x-=8;)for(y=H;y-=8;){l=pixels[4*(W*y+x)]>0?8:3
     q=l*sin(x*y+t/10);fill(c=q*67&b,q*43&b,q*56&b);circle(x,y,q)}}
 
+[View/ run this code online](https://editor.p5js.org/KMoerman/sketches/eVGKrUk-7)
+
 The code on Github:
 
 * Javascript code file [sketch.js](p5js/sketch.js)
@@ -610,6 +612,8 @@ It plots small circles at x,y and uses part of z (cos(u) for the color. The inte
     for(v=t;j=sin(v),k=cos(v),v<t+TAU;v+=1+dt)
     {fill(c=b*j,b*p,b-c);circle(w+r*q*k,w+r*q*j,5*q)}}
 
+[View/ run this code online](https://editor.p5js.org/KMoerman/sketches/eVGKrUk-7)
+
 The code on Github:
 
 * Javascript code file [sketch.js](swirl/sketch.js)
@@ -620,4 +624,29 @@ A still from the animation:
 
 ![swirl/swirl.png](swirl/swirl.png)
 
+## Swirl 3D
 
+Using the same math from previous 'Swirl', this version defines the y coordinate for plotting as
+
+    yplot = Y/sqrt(2)  + Z/sqrt(2)
+
+Which shows the sphere at a fixed viewing angle.
+
+    f=0;r=230;b=255;d=r/1.41//Swirl3D #p5js
+    draw=_=>{f++||createCanvas(W=2*b,W)+background(0)+noStroke()
+    background(0,6);dt=.2*sin(t=f/b)
+    for(u=t;q=sin(u),p=cos(u),u<t+TAU;u+=.3+dt)
+    for(v=t;j=sin(v),k=cos(v),v<t+TAU;v+=.3-dt)
+    {fill(b*q,c=b*p,b-c);circle(b+r*q*k,b+d*p+d*q*j,2-p)}}
+
+[View/ run this code online](https://editor.p5js.org/KMoerman/sketches/5gUOA3EwW)
+
+The code on Github:
+
+* Javascript code file [sketch.js](swirl/sketch2.js)
+
+* HTML file to run javascript in browser: [index.html](swirl/index2.html)
+
+A still from the animation:
+
+![swirl/swirl.png](swirl/swirl3D.png)

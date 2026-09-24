@@ -626,7 +626,13 @@ A still from the animation:
 
 ## Swirl 3D
 
-Using the same math from previous 'Swirl', this version defines the y coordinate for plotting as
+Using the same math from previous 'Swirl' based on the equations of a sphere using spherical coordinates.
+
+    X = R sin(u) cos(v)
+    Y = R sin(u) sin(v)
+    Z = R cos(u)
+
+this version defines the y coordinate for plotting as
 
     yplot = Y/sqrt(2)  + Z/sqrt(2)
 

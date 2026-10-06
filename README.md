@@ -28,6 +28,10 @@ The javascript code can be enhanced with the functions from the library P5.JS be
 
 Note the version 2.3.2 of the library is used in this example, this can be modified. This library itself is also javascript code.
 
+The later examples are specially made to fit in the 280 character limit of x.com
+
+See [posts shwowing these pieces of code on x](https://x.com/KurtMoerman4)
+
 
 ## Simple Swimmer
 

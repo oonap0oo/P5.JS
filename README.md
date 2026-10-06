@@ -30,7 +30,9 @@ Note the version 2.3.2 of the library is used in this example, this can be modif
 
 The later examples are specially made to fit in the 280 character limit of x.com
 
-See [posts shwowing these pieces of code on x](https://x.com/KurtMoerman4)
+This is also known as 'Code Golfing' often showing the #p5js hashtag.
+
+[x.com profile showing these pieces of code](https://x.com/KurtMoerman4)
 
 
 ## Simple Swimmer
@@ -732,3 +734,36 @@ The code on Github:
 A still from the animation:
 
 ![swirl/swirl.png](king-s-dream-fractal/kings-dream.png)
+
+## Busy Mandelbrot
+
+This piece of code combines the Mandelbrot fractal with moving patterns in a grid of small disks.
+
+The color and size of each disk is defined by
+
+    c = (x*y*2-t)&255
+	
+ 	x,y coordinates of the grid, t the is ever increasing time variable
+	the operation &255 constrains c within 0..255
+
+The code:
+
+    t=0;s=9,n=25,B=255// #p5js
+    draw=_=>{t++||createCanvas(W=2*s*n,W)+textSize(s)+noStroke()+background(0)
+    for(x=W;r=x/W*2.6-2,x-=s;)for(y=W;i=y/W*2.3-1.2,y-=s;)
+    {u=v=0;for(l=s;mag(u,v)<2&&l--;)[u,v]=[u*u-v*v+r,2*u*v+i]
+    c=(x*y*2-t)&B;fill(k=(c<n)*B,k,c);circle(x,y,(d=s-l-2)>2?d:2)}}
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/ZWUGFCsht)
+
+The code on Github:
+
+* Javascript code file [sketch.js](busy-mandelbrot/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](busy-mandelbrot/index.html)
+
+A still from the animation:
+
+![swirl/swirl.png](busy-mandelbrot/busy-mandelbrot.png)
+
+

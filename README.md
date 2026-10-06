@@ -2,7 +2,11 @@
 
 Exploring [P5.JS](https://p5js.org/) JavaScript library.
 
+## View and run this code online
+
 View the pieces of code on the [P5.JS website 'My Sketches'](https://editor.p5js.org/KMoerman/sketches)
+
+## Running p5.js code locally in a browser
 
 The javascript code of a sketch can also be executed locally in a browser by combining it with an HTML file such as this example:
 
@@ -28,11 +32,14 @@ The javascript code can be enhanced with the functions from the library P5.JS be
 
 Note the version 2.3.2 of the library is used in this example, this can be modified. This library itself is also javascript code.
 
-The later examples are specially made to fit in the 280 character limit of x.com
+## Code Golfing #p5js
 
-This is also known as 'Code Golfing' often showing the #p5js hashtag.
+The later examples are specially made to fit in the 280 character limit of x.com. This is also known as 'Code Golfing' often showing the #p5js hashtag.
 
-[x.com profile showing these pieces of code](https://x.com/KurtMoerman4)
+The x.com profile showing these pieces of code:
+
+[https://x.com/KurtMoerman4](https://x.com/KurtMoerman4)
+
 
 
 ## Simple Swimmer

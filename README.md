@@ -656,3 +656,41 @@ The code on Github:
 A still from the animation:
 
 ![swirl/swirl.png](swirl/swirl3D.png)
+
+## Torus
+
+This version puts the points on the surface of a torus.
+
+    X = (2R + Rcos(v))cos(u)
+    Y = (2R + Rcos(v))sin(u)
+    Z = R sin(v)
+
+The 3D torus is plotted on the 2D image as
+
+    xplot = X
+	yplot = .7Y + .7Z
+
+Where the factor .7 approximates 1/sqrt(2)
+
+The code:	
+
+    f=0;b=255;R=80//Torus #p5js #Processing
+    draw=_=>{f||createCanvas(W=2*b,W)+noStroke()
+    background(0,f?10:b)
+    for(v=t=f++/b;w=5-4*sin(v),v<t+TAU;v+=.2)
+    for(u=v/w;k=2*R+R*cos(V=v+t),fill(b*sin(U=u+t),w*35,b*sin(V)),u<v/w+TAU;u+=.3)
+    circle(b+k*cos(U),b+.7*k*sin(U)+.7*R*sin(V),2)}
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/Ylz4eH6Kq)
+
+The code on Github:
+
+* Javascript code file [sketch.js](swirl/sketch4.js)
+
+* HTML file to run javascript in browser: [index.html](swirl/index4.html)
+
+A still from the animation:
+
+![swirl/swirl.png](swirl/torus.png)
+
+

@@ -693,4 +693,38 @@ A still from the animation:
 
 ![swirl/swirl.png](swirl/torus.png)
 
+# King"s Dream
 
+This script draws the King's Dream fractal defined by iterating the x,y values through the following function
+
+    x = sin(a*x) + b*sin(a*y)
+    y = sin(c*x) + d*sin(c*y)
+
+with constants of 
+
+    a = 2.88
+    b = -0.77
+    c = -0.97
+    d = 0.75
+
+and initial values of x=2, y=0 
+
+The code:
+
+    t=0;x=y=2;B=255;f=x=>8*~~(16*x+33)//#p5js
+    draw=_=>{t||(createCanvas(W=2*B,W),noStroke(),s=sin);background(0,t++?6:B)
+    for(k=750;k--;){[x,y]=[s(2.88*x)-.77*s(2.88*y),s(-.97*x)+.75*s(-.97*y)]
+    p=get(u=f(x),v=f(y));q=8*s(u*v/10-t/30);p[0]+=8*q;p[1]+=8;p[2]-=9*q
+    fill(p);circle(u,v,q)}}
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/NDSPNULEA)
+
+The code on Github:
+
+* Javascript code file [sketch.js](king-s-dream-fractal/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](king-s-dream-fractal/index.html)
+
+A still from the animation:
+
+![swirl/swirl.png](king-s-dream-fractal/kings-dream.png)

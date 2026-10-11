@@ -796,3 +796,35 @@ The code on Github:
 A still from the animation:
 
 ![swirl/swirl.png](p5js/busy-p5js.png)
+
+## Cubic Henon
+
+Displaying a Cubic Henon map, found on this page:
+
+[http://www.3d-meier.de/tut19/Seite154.html](http://www.3d-meier.de/tut19/Seite154.html)
+
+The x,y coordinates of the points are mapped through
+
+x = 1.5*x-x**3-y
+y = x
+
+The code:
+
+    f=s=0;c=230;B=255//Cubic Henon #p5js
+    draw=_=>{f++||createCanvas(W=2*B,W)+noStroke()+background(0)
+    for(m=10;m--;){
+    x=y=.8*sqrt(((s^f)%80)/80);fill(r=(s++)&B,(3*r+f)&B,(6*r+f)&B)
+    for(k=~~(2e3*abs(x));k--;)
+    {[x,y]=[1.5*x-x**3-y,x];rect(~~(B+x*c),~~(B+y*c),1)}}}
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/LKkO2zVks
+
+The code on Github:
+
+* Javascript code file [sketch.js](cubic-henon/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](cubic-henon/index.html)
+
+A still from the animation:
+
+![cubic-henon/cubic-henon.png](cubic-henon/cubic-henon.png)

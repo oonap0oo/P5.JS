@@ -805,8 +805,8 @@ Displaying a Cubic Henon map, found on this page:
 
 The x,y coordinates of the points are mapped through
 
-x = 1.5*x-x**3-y
-y = x
+    x = 1.5*x-x**3-y
+    y = x
 
 The code:
 
@@ -817,7 +817,7 @@ The code:
     for(k=~~(2e3*abs(x));k--;)
     {[x,y]=[1.5*x-x**3-y,x];rect(~~(B+x*c),~~(B+y*c),1)}}}
 
-[View/run this online](https://editor.p5js.org/KMoerman/sketches/LKkO2zVks
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/LKkO2zVks)
 
 The code on Github:
 
@@ -828,3 +828,32 @@ The code on Github:
 A still from the animation:
 
 ![cubic-henon/cubic-henon.png](cubic-henon/cubic-henon.png)
+
+## Alien Fireworks
+Mapping the x,y coordinates through
+
+    x = sin(x*x-y*y+a)
+    y = sin(2*x*y+b)
+
+Whera a,b are parameters, b ramps from 0 to 2*pi, each time b reaches 0 the second parameter a is decreased one step on it's own ramp from 2*pi towards zero.
+
+    t=x=y=a=0;d=2e-6;B=255// #p5js
+    draw=_=>{t||(createCanvas(W=2*B,W),noStroke(),P=b=TAU,S=sin)
+    t&3?0:background(0,t?8:B);fill(B*S(h=(x+y)*3),B*S(h+2),B*S(h+4))
+    for(k=1e4;k--;){b<P?b+=d:(b=0,a>0?a-=d:a=P);
+    [x,y]=[S(x*x-y*y+a),S(2*x*y+b)];rect(B+B*x,B-B*y,1)}
+    [x,y]=[y,x];t++}
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/sXq58AEnx)
+
+The code on Github:
+
+* Javascript code file [sketch.js](alien-fireworks/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](alien-fireworks/index.html)
+
+Some still images from the animation:
+
+![alien-fireworks/alien-fireworks-1.png](alien-fireworks/alien-fireworks-1.png)
+
+![alien-fireworks/alien-fireworks-2.png](alien-fireworks/alien-fireworks-2.png)

@@ -890,4 +890,27 @@ A animated GIF generated using the saveGif() function of p5.js
 
 ![lorenz/Lorenz.gif](lorenz/Lorenz.gif)
 
+## Dynamic Mandala
 
+Each frame this code plots a set of disks with same color and size. The size, position and color changes the next frame.
+
+A mandala like figure is build up which keeps changing continuously.
+
+    t=0;w=250;D=30;S=9,B=255//Dynamic Mandala #p5js
+    draw=_=>{t++||(createCanvas(W=2*w,W),noStroke(),background(0),f=random)
+    R=f(q=w-D);a=f(T=TAU/S);r=f(D*(.1+.9*R/q))
+    fill(t&B,(5*t)&B,(25*t)&B)
+    for(s=0;s<TAU;s+=T)
+    for(p=2;p--;)circle(w+R*cos(A=s+a-p*2*a),w+R*sin(A),r)}
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/8kbpiX0QC)
+
+The code on Github:
+
+* Javascript code file [sketch.js](dynamic-mandala/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](dynamic-mandala/index.html)
+
+A still image from the ever changing output;
+
+![dynamic-mandala/dynamic-mandala.png](dynamic-mandala/dynamic-mandala.png)

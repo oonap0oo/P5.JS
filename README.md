@@ -958,7 +958,32 @@ The code on Github:
 
 * HTML file to run javascript in browser: [index.html](ripples/index.html)
 
-An animated GIF from the ever changing output;
+A still image from the ever changing output;
 
 ![ripples/ripples.png](ripples/ripples.png)
+
+## The Glitch
+
+Layers of squares seem to display ever changing colored patterns
+
+    f=0;B=255;N=20;s=12;w=s*N// #p5js
+    g=x=>s*sin(5*x)
+    draw=_=>{f++||(createCanvas(W=2*w,W),r=rect);background(0)
+    for(m=N;m--;)for(k=N;k--;)
+    {q=f/W+(k^m)/55;fill(c=(q*B)&B,(2*c)&B,B-c)
+    r(x=m*s,y=k*s,V=g(q-f/w),H=g(q+f/B))
+    r(x,Y=W-y-s,V,H);r(X=W-x-s,y,V,H);r(X,Y,V,H)}}
+
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/RUufszwRt)
+
+The code on Github:
+
+* Javascript code file [sketch.js](the-glitch/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](the-glitch/index.html)
+
+A still image from the ever changing output;
+
+![the-glitch/the-glitch.png](the-glitch/the-glitch.png)
 

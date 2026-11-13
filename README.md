@@ -987,3 +987,26 @@ A still image from the ever changing output;
 
 ![the-glitch/the-glitch.png](the-glitch/the-glitch.png)
 
+## Spherical Rosette to Rings
+
+A figure evolves between a rosette shape to a series of rings, revealing that the figure lies on the surface of a sphere.
+
+    f=0;r=240;s=.7*r;b=255// #p5js
+    draw=_=>{f||createCanvas(W=2*b,W)+noStroke()
+    background(0,f?8:b);d=.39*cos(f++/W)
+    for(u=0;q=sin(u),p=cos(u),fill(m=b-p*b,c=b-q*b,b+c-m),u<TAU;u+=.4-d)
+    for(v=u;j=sin(v+u),k=cos(v+u),v<u+TAU;v+=.4+d)
+    rect(b+r*q*k,b+s*q*j+s*p,2+q*j)}
+
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/Sr6VY97nR)
+
+The code on Github:
+
+* Javascript code file [sketch.js](spherical-rosette-to-rings/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](spherical-rosette-to-rings/index.html)
+
+A still image from the ever changing output;
+
+![spherical-rosette-to-rings/spherical-rosette-to-rings.png](spherical-rosette-to-rings/spherical-rosette-to-rings.png)

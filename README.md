@@ -914,3 +914,26 @@ The code on Github:
 A still image from the ever changing output;
 
 ![dynamic-mandala/dynamic-mandala.png](dynamic-mandala/dynamic-mandala.png)
+
+## Swirling Sphere
+
+A rotating 3D sphere made up from disks with ever changing colors.
+
+    f=0;B=255;w=250;R=220;N=35// #p5js
+    draw=_=>{f++||createCanvas(W=2*w,W)+noStroke();background(0)
+    for(m=0,t=0;D=2*m+f/R,t<=PI;m++,t+=PI/N)for(k=f,d=D-PI;d<D+PI;k++,d+=TAU/N)
+    {fill((c=k*m/6)%B,(2*c)&B,(3*c)&B)
+    circle(w+R*(s=sin(t))*cos(d),w+.7*R*(y=s*sin(d))+.7*R*cos(t),5+4*y)}}
+
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/T_g0SBqax)
+
+The code on Github:
+
+* Javascript code file [sketch.js](swirling-sphere/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](swirling-sphere/index.html)
+
+An animated GIF from the ever changing output;
+
+![swirling-sphere/swirling-sphere.gif](swirling-sphere/swirling-sphere.gif)

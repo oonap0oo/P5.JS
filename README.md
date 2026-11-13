@@ -937,3 +937,28 @@ The code on Github:
 An animated GIF from the ever changing output;
 
 ![swirling-sphere/swirling-sphere.gif](swirling-sphere/swirling-sphere.gif)
+
+## Ripples
+
+Colored disks do not move but change in size to generate ripples emanating from the center of the image.
+
+    f=0;B=255;N=18;d=12;w=N*d// #p5js
+    draw=_=>{f++||(createCanvas(W=2*w,W),noStroke(),c=circle)
+    background(0)
+    for(m=N;m--;)for(k=N;k--;)
+    {z=(m*k/8+f/6)%d-d/2;fill(r=(56*(m^k))&B,(r*3)&B,B-r)
+    c(x=d+d*m,y=d+d*k,Z=2*z);c(X=W-d*m-d,y,Z);c(x,Y=W-d*k-d,Z);c(X,Y,Z)}}
+
+
+[View/run this online](https://editor.p5js.org/KMoerman/sketches/9e-4yqCwe)
+
+The code on Github:
+
+* Javascript code file [sketch.js](ripples/sketch.js)
+
+* HTML file to run javascript in browser: [index.html](ripples/index.html)
+
+An animated GIF from the ever changing output;
+
+![ripples/ripples.png](ripples/ripples.png)
+
